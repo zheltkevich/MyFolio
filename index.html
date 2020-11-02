@@ -45,12 +45,12 @@
         <b class="name-block__name">Александр</b>
         <b class="name-block__surname">Желткевич</b>
       </p>
-      <p class="name-block__age">32 года</p>
+      <span class="name-block__age">32 года</span>
     </section>
 
     <section class="profession-block">
       <h2 class="section-title">Профессия</h2>
-      <b class="profession-block__profession">FrontEnd-разработчик</b>
+      <b class="profession-block__profession">FrontEnd-разработчик</b><br>
       <span class="profession-block__stage">2 года 3 месяца</span>
     </section>
 
@@ -140,9 +140,66 @@
           <img class="tech-block__tech-icon" src="img/webpack_logo.svg" width="40" height="40" alt="WebPack">
         </li>
       </ul>
-      <button class="tech-block__add-button" type="button">Добавить технологию</button>
+      <button class="tech-block__add-button" type="button">
+        <span class="hidden">Добавить технологию</span>
+        <img class="tech-block__add-button-icon" src="img/add_icon.svg" width="40" height="40" alt="Добавить технологию">
+      </button>
     </section>
 
+    <section class="experience-block">
+      <h2 class="section-title">Профессиональный опыт</h2>
+      <p class="experience-block__about">
+        <b class="experience-block__profession">FrontEnd - разработчик</b>
+        <span class="experience-block__stage">2 года 3 месяца</span><br>
+        <b class="experience-block__company">Фриланс</b>
+        <span class="experience-block__location">Санкт-Петербург</span>
+      </p>
+      <p class="experience-block__description">
+        — Валидная кроссбраузерная верстка с помощью HTML, CSS, JS<br>
+        — Верстка на CMS Tilda<br>
+        — Разработка дизайн-макетов в Figma<br>
+        — Ведение проектов от знакомства с клиентом до сдачи проекта
+      </p>
+    </section>
+
+    <section class="education-block">
+      <h2 class="section-title">Образование</h2>
+      <ul class="education-block__list">
+        <li class="education-block__item">
+          <b class="education-block__gradation">Высшее (Бакалавр)</b>
+          <span class="education-block__institution">Кузбасская Государственная Сельскохозяйственная Академия</span><br>
+          <b class="education-block__location">Кемерово</b>
+          <span class="education-block__years">2015 - 2020</span>
+        </li>
+      </ul>
+    </section>
+
+    <section class="additional-education-block">
+      <h2 class="section-title">Доп. образование</h2>
+      <ul class="additional-education-block__list">
+        <li class="additional-education-block__item">
+          <h3 class="additional-education-block__heading">Веб-дизайнер (2018)</h3>
+          <a href="#" class="additional-education-block__link">tilda.school</a>
+          <p class="additional-education-block__description">
+            Курс веб-дизайна и верстки сайтов на платформе Tilda от Максима Ширко
+          </p>
+        </li>
+        <li class="additional-education-block__item">
+          <h3 class="additional-education-block__heading">HTML-верстальщик (2019)</h3>
+          <a href="#" class="additional-education-block__link">openedu.ru</a>
+          <p class="additional-education-block__description">
+            Основы программирования HTML/CSS/JavaScript от Университета ИТМО
+          </p>
+        </li>
+        <li class="additional-education-block__item">
+          <h3 class="additional-education-block__heading">FrontEnd-разработчик (2020)</h3>
+          <a href="#" class="additional-education-block__link">htmlacademy.ru</a>
+          <p class="additional-education-block__description">
+            Профессиональная разработка адаптивных сайтов и веб-интерфейсов
+          </p>
+        </li>
+      </ul>
+    </section>
   </main>
 
 </body>
