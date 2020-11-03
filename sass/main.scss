@@ -3,8 +3,13 @@
 
 
 .card {
+  min-width: 320px;
   width: 100%;
+  margin: 0 auto;
   padding: 20px 12px;
+  border-radius: 10px;
+  background-color: #ffffff;
+  margin-bottom: 10px;
 }
 
 
@@ -14,6 +19,7 @@
   align-items: center;
   position: relative;
   margin-bottom: 20px;
+  width: 100%;
 
   &::after {
     content: "";
@@ -229,10 +235,7 @@
 .name-block {
   margin-top: 54px;
   min-height: 132px;
-  padding-top: 16px;
-  padding-bottom: 16px;
-  border-radius: 0px 0px 10px 10px;
-  background-color: #fff;
+  border-radius: 0 0 10px 10px;
 
   &__wrapper {
     display: flex;
@@ -273,12 +276,7 @@
 
 
 .profession-block {
-  margin-top: 8px;
   min-height: 132px;
-  padding-top: 16px;
-  padding-bottom: 16px;
-  border-radius: 0px 0px 10px 10px;
-  background-color: #fff;
 
   &__profession {
   }

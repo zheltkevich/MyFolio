@@ -66,8 +66,14 @@ button {
 }
 
 .card {
+  min-width: 320px;
   width: 100%;
+  margin: 0 auto;
   padding: 20px 12px;
+  -webkit-border-radius: 10px;
+          border-radius: 10px;
+  background-color: #ffffff;
+  margin-bottom: 10px;
 }
 
 .section-title {
@@ -85,6 +91,7 @@ button {
           align-items: center;
   position: relative;
   margin-bottom: 20px;
+  width: 100%;
 }
 
 .section-title::after {
@@ -300,11 +307,8 @@ button {
 .name-block {
   margin-top: 54px;
   min-height: 132px;
-  padding-top: 16px;
-  padding-bottom: 16px;
-  -webkit-border-radius: 0px 0px 10px 10px;
-          border-radius: 0px 0px 10px 10px;
-  background-color: #fff;
+  -webkit-border-radius: 0 0 10px 10px;
+          border-radius: 0 0 10px 10px;
 }
 
 .name-block__wrapper {
@@ -351,11 +355,5 @@ button {
 }
 
 .profession-block {
-  margin-top: 8px;
   min-height: 132px;
-  padding-top: 16px;
-  padding-bottom: 16px;
-  -webkit-border-radius: 0px 0px 10px 10px;
-          border-radius: 0px 0px 10px 10px;
-  background-color: #fff;
 }
