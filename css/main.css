@@ -180,6 +180,7 @@ button {
   position: relative;
   width: 24px;
   height: 24px;
+  cursor: pointer;
 }
 
 .section-title__options-button::before {
@@ -250,6 +251,7 @@ button {
   position: relative;
   width: 36px;
   height: 28px;
+  cursor: pointer;
 }
 
 .header-navbar__burger-button::before {
@@ -292,6 +294,7 @@ button {
   position: relative;
   width: 28px;
   height: 28px;
+  cursor: pointer;
 }
 
 .header-navbar__options-button::before {
