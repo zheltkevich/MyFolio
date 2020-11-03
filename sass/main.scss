@@ -21,7 +21,7 @@
   justify-content: space-between;
   align-items: flex-end;
   position: relative;
-  margin-bottom: 20px;
+  margin-bottom: 24px;
   width: 100%;
 
   &::after {
@@ -42,8 +42,8 @@
 
   &__options-button {
     position: relative;
-    width: 30px;
-    height: 30px;
+    width: 24px;
+    height: 24px;
 
     &::before {
       content: "";
@@ -51,7 +51,7 @@
       top: 0;
       right: 1px;
       width: 6px;
-      height: 28px;
+      height: 24px;
       background-image: url(../img/options-button.svg);
       background-repeat: no-repeat;
       background-size: contain;
@@ -93,6 +93,7 @@
     background-color: #ffffff;
     left: 0;
     top: -100vh;
+    padding: 60px 12px 20px;
   }
 }
 
@@ -290,6 +291,7 @@
 
   &__profession {
     display: block;
+    line-height: 25px;
   }
 
   &__stage {
@@ -312,8 +314,6 @@
   }
 
   &__heading {
-    font-size: 18px;
-    font-weight: 500;
     color: #767676;
     margin-bottom: 10px;
   }
@@ -392,6 +392,7 @@
 
   &__profession {
     display: block;
+    line-height: 25px;
   }
 
   &__stage {
@@ -401,6 +402,7 @@
 
   &__company {
     display: block;
+    line-height: 25px;
   }
 
   &__location {
@@ -424,6 +426,7 @@
 
   &__gradation {
     display: block;
+    line-height: 25px;
 
   }
 
@@ -434,6 +437,7 @@
 
   &__location {
     display: block;
+    line-height: 25px;
   }
 
   &__years {
@@ -456,6 +460,10 @@
   &__heading {
     display: block;
     font-weight: 500;
+  }
+
+  &__heading b {
+    line-height: 25px;
   }
 
   &__link {

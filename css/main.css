@@ -113,7 +113,7 @@ button {
       -ms-flex-align: end;
           align-items: flex-end;
   position: relative;
-  margin-bottom: 20px;
+  margin-bottom: 24px;
   width: 100%;
 }
 
@@ -135,8 +135,8 @@ button {
 
 .section-title__options-button {
   position: relative;
-  width: 30px;
-  height: 30px;
+  width: 24px;
+  height: 24px;
 }
 
 .section-title__options-button::before {
@@ -145,7 +145,7 @@ button {
   top: 0;
   right: 1px;
   width: 6px;
-  height: 28px;
+  height: 24px;
   background-image: url(../img/options-button.svg);
   background-repeat: no-repeat;
   -webkit-background-size: contain;
@@ -185,6 +185,7 @@ button {
   background-color: #ffffff;
   left: 0;
   top: -100vh;
+  padding: 60px 12px 20px;
 }
 
 .header-navbar {
@@ -395,6 +396,7 @@ button {
 
 .profession-block__profession {
   display: block;
+  line-height: 25px;
 }
 
 .profession-block__stage {
@@ -406,8 +408,6 @@ button {
 }
 
 .contacts-list__heading {
-  font-size: 18px;
-  font-weight: 500;
   color: #767676;
   margin-bottom: 10px;
 }
@@ -461,6 +461,7 @@ button {
 
 .experience-block__profession {
   display: block;
+  line-height: 25px;
 }
 
 .experience-block__stage {
@@ -470,6 +471,7 @@ button {
 
 .experience-block__company {
   display: block;
+  line-height: 25px;
 }
 
 .experience-block__location {
@@ -482,6 +484,7 @@ button {
 
 .education-block__gradation {
   display: block;
+  line-height: 25px;
 }
 
 .education-block__institution {
@@ -491,6 +494,7 @@ button {
 
 .education-block__location {
   display: block;
+  line-height: 25px;
 }
 
 .education-block__years {
@@ -510,6 +514,10 @@ button {
 .additional-education-block__heading {
   display: block;
   font-weight: 500;
+}
+
+.additional-education-block__heading b {
+  line-height: 25px;
 }
 
 .additional-education-block__link {
