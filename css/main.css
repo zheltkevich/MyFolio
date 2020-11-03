@@ -363,7 +363,9 @@ button {
 }
 
 .name-block__avatar {
-  width: 120px;
+  -webkit-flex-shrink: 0;
+      -ms-flex-negative: 0;
+          flex-shrink: 0;
   -webkit-border-radius: 50%;
           border-radius: 50%;
   border: 4px solid #926e12;
