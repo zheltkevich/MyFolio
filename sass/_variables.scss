@@ -1,0 +1,7 @@
+$main-color: #AA831E;
+$content-color: #2E3A59;
+
+@mixin container {
+  margin: 0 auto;
+  padding: 0 12px;
+}

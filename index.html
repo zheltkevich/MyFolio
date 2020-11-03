@@ -6,13 +6,21 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>PWA</title>
   <meta name="description" content="Моя анкета">
+  <link rel="preload" href="css/main.css" as="style">
+  <link rel="stylesheet" href="css/main.css">
 </head>
 
 <body>
   <header class="main-header">
+    <div class="container"></div>
     <nav class="main-header__navbar header-navbar">
-      <button class="header-navbar__burger-button" type="button">Открыть меню</button>
-      <button class="header-navbar__options-button" type="button">Опции</button>
+      <button class="header-navbar__burger-button" type="button">
+        <span class="hidden">Открыть меню</span>
+        <span class="header-navbar__burger-button-rect"></span>
+      </button>
+      <button class="header-navbar__options-button" type="button">
+        <span class="hidden">Опции</span>
+      </button>
     </nav>
     <nav class="main-header__side-navbar side-navbar">
       <ul class="side-navbar__list">
@@ -33,34 +41,49 @@
         </li>
       </ul>
     </nav>
+    </div>
   </header>
 
   <main>
     <h1 class="hidden">Моя анкета</h1>
 
-    <section class="name-block">
+    <section class="name-block card">
       <h2 class="hidden">Мои данные</h2>
-      <img class="name-block__avatar" src="img/avatar.webp" alt="Моя фотография">
-      <p class="name-block__myname">
-        <b class="name-block__name">Александр</b>
-        <b class="name-block__surname">Желткевич</b>
-      </p>
-      <span class="name-block__age">32 года</span>
-    </section>
 
-    <section class="profession-block">
-      <div class="section-title">
-        <h2 class="section-title__heading">Профессия</h2>
-        <button class="section-title__options-button">Опции</button>
+      <div class="name-block__wrapper">
+        <img class="name-block__avatar" src="img/avatar.webp" alt="Моя фотография">
+        <div class="name-block__content-wrapper">
+          <p class="name-block__myname">
+            <b class="name-block__name">Александр</b>
+            <b class="name-block__surname">Желткевич</b>
+          </p>
+          <span class="name-block__age">32 года</span>
+        </div>
       </div>
-      <b class="profession-block__profession">FrontEnd-разработчик</b><br>
-      <span class="profession-block__stage">2 года 3 месяца</span>
     </section>
 
-    <section class="links-block">
+    <section class="profession-block card">
+      <div class="container">
+        <div class="section-title">
+          <h2 class="section-title__heading">Профессия</h2>
+          <button class="section-title__options-button">
+            <span class="hidden">Опции</span>
+          </button>
+        </div>
+      </div>
+      <div class="container">
+        <b class="profession-block__profession">FrontEnd-разработчик</b><br>
+        <span class="profession-block__stage">2 года 3 месяца</span>
+      </div>
+    </section>
+
+    <section class="links-block card">
       <div class="section-title">
         <h2 class="section-title__heading">Ссылки</h2>
-        <button class="section-title__options-button">Опции</button>
+        <button class="section-title__options-button">
+          <span class="hidden">Опции</span>
+          <span class="section-title__options-button-rect"></span>
+        </button>
       </div>
       <ul class="links-block__contacts-list contacts-list">
         <li class="contacts-list__item">
@@ -101,10 +124,13 @@
       </ul>
     </section>
 
-    <section class="about-block">
+    <section class="about-block card">
       <div class="section-title">
         <h2 class="section-title__heading">Обо мне</h2>
-        <button class="section-title__options-button">Опции</button>
+        <button class="section-title__options-button">
+          <span class="hidden">Опции</span>
+          <span class="section-title__options-button-rect"></span>
+        </button>
       </div>
       <p class="about-block__description">
         Знаю английский язык на достаточном уровне для чтения и понимания спецификаций.
@@ -112,10 +138,13 @@
       </p>
     </section>
 
-    <section class="tech-block">
+    <section class="tech-block card">
       <div class="section-title">
         <h2 class="section-title__heading">Знание технологий</h2>
-        <button class="section-title__options-button">Опции</button>
+        <button class="section-title__options-button">
+          <span class="hidden">Опции</span>
+          <span class="section-title__options-button-rect"></span>
+        </button>
       </div>
       <ul class="tech-block__tech-list">
         <li class="tech-block__tech-item">
@@ -154,14 +183,18 @@
       </ul>
       <button class="tech-block__add-button" type="button">
         <span class="hidden">Добавить технологию</span>
-        <img class="tech-block__add-button-icon" src="img/add_icon.svg" width="40" height="40" alt="Добавить технологию">
+        <img class="tech-block__add-button-icon" src="img/add_icon.svg" width="40" height="40"
+          alt="Добавить технологию">
       </button>
     </section>
 
-    <section class="experience-block">
+    <section class="experience-block card">
       <div class="section-title">
         <h2 class="section-title__heading">профессиональный опыт</h2>
-        <button class="section-title__options-button">Опции</button>
+        <button class="section-title__options-button">
+          <span class="hidden">Опции</span>
+          <span class="section-title__options-button-rect"></span>
+        </button>
       </div>
       <p class="experience-block__about">
         <b class="experience-block__profession">FrontEnd - разработчик</b>
@@ -177,10 +210,13 @@
       </p>
     </section>
 
-    <section class="education-block">
+    <section class="education-block card">
       <div class="section-title">
         <h2 class="section-title__heading">Образование</h2>
-        <button class="section-title__options-button">Опции</button>
+        <button class="section-title__options-button">
+          <span class="hidden">Опции</span>
+          <span class="section-title__options-button-rect"></span>
+        </button>
       </div>
       <ul class="education-block__list">
         <li class="education-block__item">
@@ -192,10 +228,13 @@
       </ul>
     </section>
 
-    <section class="additional-education-block">
+    <section class="additional-education-block card">
       <div class="section-title">
         <h2 class="section-title__heading">Доп. образование</h2>
-        <button class="section-title__options-button">Опции</button>
+        <button class="section-title__options-button">
+          <span class="hidden">Опции</span>
+          <span class="section-title__options-button-rect"></span>
+        </button>
       </div>
       <ul class="additional-education-block__list">
         <li class="additional-education-block__item">

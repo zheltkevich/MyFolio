@@ -1,5 +1,33 @@
+@import "./variables";
+
+@font-face {
+  font-family: "PT-Root-UI";
+  src: url("../fonts/PT-Root-UI_Light.woff2") format("woff2");
+  src: local("☺"), url("../fonts/PT-Root-UI_Light.woff2") format("woff2");
+  font-weight: 300;
+  font-style: normal; 
+}
+
+@font-face {
+  font-family: "PT-Root-UI";
+  src: url("../fonts/PT-Root-UI_Regular.woff2") format("woff2");
+  src: local("☺"), url("../fonts/PT-Root-UI_Regular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal; 
+}
+
+@font-face {
+  font-family: "PT-Root-UI";
+  src: url("../fonts/PT-Root-UI_Medium.woff2") format("woff2");
+  src: local("☺"), url("../fonts/PT-Root-UI_Medium.woff2") format("woff2");
+  font-weight: 500;
+  font-style: normal; 
+}
+
 * {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 a {
@@ -7,6 +35,49 @@ a {
   color: inherit;
 }
 
+html,
+body {
+  height: 100%;
+  font-family: "PT Root UI", Arial, sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  color: $content-color;
+  background-color: #D3D3D3;
+}
+
 ul li {
   list-style: none;
+}
+
+img {
+  display: block;
+  min-width: 120px;
+}
+
+button {
+  border: 0;
+  outline: 0;
+  background: unset;
+}
+
+// .hidden,
+// .hidden:not(:focus):not(:active) {
+//   position: absolute;
+  
+//   width: 1px;
+//   height: 1px;
+//   margin: -1px;
+//   border: 0;
+//   padding: 0;
+
+//   white-space: nowrap;
+
+//   clip-path: inset(100%);
+//   clip: rect(0, 0, 0, 0);
+//   overflow: hidden;
+// }
+
+.container {
+  margin: 0 auto;
+  padding: 0 12px;
 }

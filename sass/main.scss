@@ -1,1 +1,406 @@
+@import "./variables";
 @import "./global";
+
+
+.card {
+  width: 100%;
+  padding: 20px 12px;
+}
+
+
+.section-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  margin-bottom: 20px;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 36px;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background-color: $main-color;
+  }
+
+  &__heading {
+    font-weight: 500;
+    font-size: 20px;
+    color: $main-color;
+  }
+
+  &__options-button {
+    position: relative;
+    width: 28px;
+    height: 28px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 6px;
+      height: 28px;
+      background-image: url(../img/options-button.svg);
+      background-repeat: no-repeat;
+
+    }
+  }
+}
+
+
+.main-header {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 50;
+
+  &::after {
+    content: "";
+    position: absolute;
+    z-index: 3;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: $main-color;
+  }
+
+  &__navbar {
+    position: relative;
+    z-index: 4;
+    height: 54px;
+  }
+
+  &__side-navbar {
+    position: absolute;
+    z-index: 2;
+    height: 100vh;
+    width: 100%;
+    background-color: #ffffff;
+    left: 0;
+    top: -100vh;
+  }
+}
+
+
+.header-navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  &__burger-button {
+    position: relative;
+    width: 36px;
+    height: 28px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      width: 36px;
+      height: 4px;
+      left: 0;
+      top: 0;
+      background-color: #ffffff;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      width: 36px;
+      height: 4px;
+      left: 0;
+      bottom: 0;
+      background-color: #ffffff;
+    }
+  }
+
+  &__burger-button-rect {
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 4px;
+    left: 0;
+    top: 12px;
+    background-color: #ffffff;
+  }
+
+  &__options-button {
+    position: relative;
+    width: 28px;
+    height: 28px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      width: 6px;
+      height: 28px;
+      top: 0;
+      right: 0;
+      background-image: url(../img/options-button--white.svg);
+    }
+  }
+}
+
+
+.side-navbar {
+
+  &__list {
+    padding: 20px 0;
+  }
+
+  &__item {
+    position: relative;
+    margin-bottom: 20px;
+    margin-left: 35px;
+
+    &:nth-child(1)::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: -35px;
+      width: 24px;
+      height: 24px;
+      background-image: url(../img/icons/id_card.svg);
+      background-position: initial;
+      background-repeat: no-repeat;
+    }
+
+    &:nth-child(2)::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: -35px;
+      width: 24px;
+      height: 24px;
+      background-image: url(../img/icons/bulb.svg);
+      background-position: initial;
+      background-repeat: no-repeat;
+    }
+
+    &:nth-child(3)::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: -35px;
+      width: 24px;
+      height: 24px;
+      background-image: url(../img/icons/heart_outline.svg);
+      background-position: initial;
+      background-repeat: no-repeat;
+    }
+
+    &:nth-child(4)::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: -35px;
+      width: 24px;
+      height: 24px;
+      background-image: url(../img/icons/user.svg);
+      background-position: initial;
+      background-repeat: no-repeat;
+    }
+
+    &:nth-child(5)::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: -35px;
+      width: 24px;
+      height: 24px;
+      background-image: url(../img/icons/settings.svg);
+      background-position: initial;
+      background-repeat: no-repeat;
+    }
+
+  }
+
+  &__link {
+    font-size: 20px;
+    font-weight: 500;
+  }
+}
+
+
+.name-block {
+  margin-top: 54px;
+  min-height: 132px;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  border-radius: 0px 0px 10px 10px;
+  background-color: #fff;
+
+  &__wrapper {
+    display: flex;
+    align-items: center;
+  }
+
+  &__content-wrapper {
+    margin-left: 12px;
+  }
+
+  &__avatar {
+    width: 120px;
+    border-radius: 50%;
+    border: 4px solid $main-color;
+    overflow: hidden;
+  }
+
+  &__myname {
+    line-height: 1.1;
+  }
+
+  &__name {
+    font-size: 24px;
+    font-weight: 500;
+  }
+
+  &__surname {
+    font-size: 24px;
+    font-weight: 500;
+  }
+
+  &__age {
+    display: block;
+    font-weight: 500;
+    margin-top: 5px;
+  }
+}
+
+
+.profession-block {
+  margin-top: 8px;
+  min-height: 132px;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  border-radius: 0px 0px 10px 10px;
+  background-color: #fff;
+
+  &__profession {
+  }
+
+  &__stage {
+  }
+}
+
+
+.links-block {
+
+  &__contacts-list {
+  }
+}
+
+
+.contacts-list {
+
+  &__item {
+  }
+
+  &__heading {
+  }
+
+  &__link {
+  }
+
+  &__icon {
+  }
+
+  &__phone {
+  }
+
+  &__mail {
+  }
+}
+
+
+.about-block {
+
+  &__description {
+  }
+}
+
+
+.tech-block {
+
+  &__tech-list {
+  }
+
+  &__tech-item {
+  }
+
+  &__tech-icon {
+  }
+
+  &__add-button {
+  }
+
+  &__add-button-icon {
+  }
+}
+
+
+.experience-block {
+
+  &__about {
+  }
+
+  &__profession {
+  }
+
+  &__stage {
+  }
+
+  &__company {
+  }
+
+  &__location {
+  }
+
+  &__description {
+  }
+}
+
+
+.education-block {
+
+  &__list {
+  }
+
+  &__item {
+  }
+
+  &__gradation {
+  }
+
+  &__institution {
+  }
+
+  &__location {
+  }
+
+  &__years {
+  }
+}
+
+
+.additional-education-block {
+
+  &__list {
+  }
+
+  &__item {
+  }
+
+  &__heading {
+  }
+
+  &__link {
+  }
+
+  &__description {
+  }
+}
