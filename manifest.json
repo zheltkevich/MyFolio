@@ -3,9 +3,9 @@
   "lang": "Russian",
   "name": "MyFolio",
   "short_name": "MyFolio",
-  "scope": "/",
+  "scope": "/MyFolio/",
   "display": "standalone",
-  "start_url": "/MyFolio/",
+  "start_url": "https://zheltkevich.github.io/MyFolio/",
   "background_color": "#ffffff",
   "theme_color": "#ffffff",
   "description": "The best application for your portfolio",
@@ -19,9 +19,9 @@
           "type": "image/png"
       },
       {
-          "src": "img/logos/512x512.png",
-          "sizes": "512x512",
-          "type": "image/png"
+        "src": "img/logos/512x512.png",
+        "sizes": "512x512",
+        "type": "image/png"
       },
       {
           "src": "img/logos/48x48.png",
