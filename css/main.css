@@ -45,19 +45,39 @@ body {
   background-color: #D3D3D3;
 }
 
+h1, h2, h3, h4, h5, h6 {
+  font: inherit;
+}
+
 ul li {
   list-style: none;
 }
 
 img {
   display: block;
-  min-width: 120px;
 }
 
 button {
   border: 0;
   outline: 0;
   background: unset;
+  margin: 0;
+  padding: 0;
+}
+
+.hidden,
+.hidden:not(:focus):not(:active) {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  -webkit-clip-path: inset(100%);
+          clip-path: inset(100%);
+  clip: rect(0, 0, 0, 0);
+  overflow: hidden;
 }
 
 .container {
@@ -67,8 +87,12 @@ button {
 
 .card {
   width: 100%;
+  min-height: 130px;
   margin: 0 auto;
-  padding: 16px 12px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  padding-left: 12px;
+  padding-right: 12px;
   -webkit-border-radius: 10px;
           border-radius: 10px;
   background-color: #ffffff;
@@ -111,19 +135,21 @@ button {
 
 .section-title__options-button {
   position: relative;
-  width: 28px;
-  height: 28px;
+  width: 30px;
+  height: 30px;
 }
 
 .section-title__options-button::before {
   content: "";
   position: absolute;
   top: 0;
-  right: 0;
+  right: 1px;
   width: 6px;
   height: 28px;
   background-image: url(../img/options-button.svg);
   background-repeat: no-repeat;
+  -webkit-background-size: contain;
+          background-size: contain;
 }
 
 .main-header {
@@ -190,6 +216,8 @@ button {
   left: 0;
   top: 0;
   background-color: #ffffff;
+  -webkit-border-radius: 30px;
+          border-radius: 30px;
 }
 
 .header-navbar__burger-button::after {
@@ -200,6 +228,8 @@ button {
   left: 0;
   bottom: 0;
   background-color: #ffffff;
+  -webkit-border-radius: 30px;
+          border-radius: 30px;
 }
 
 .header-navbar__burger-button-rect {
@@ -210,6 +240,8 @@ button {
   left: 0;
   top: 12px;
   background-color: #ffffff;
+  -webkit-border-radius: 30px;
+          border-radius: 30px;
 }
 
 .header-navbar__options-button {
@@ -224,8 +256,11 @@ button {
   width: 6px;
   height: 28px;
   top: 0;
-  right: 0;
+  right: 1px;
   background-image: url(../img/options-button--white.svg);
+  -webkit-background-size: contain;
+          background-size: contain;
+  background-repeat: no-repeat;
 }
 
 .side-navbar__list {
@@ -305,9 +340,10 @@ button {
 
 .name-block {
   margin-top: 54px;
-  min-height: 132px;
   -webkit-border-radius: 0 0 10px 10px;
           border-radius: 0 0 10px 10px;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 
 .name-block__wrapper {
@@ -355,4 +391,134 @@ button {
 
 .profession-block {
   min-height: 132px;
+}
+
+.profession-block__profession {
+  display: block;
+}
+
+.profession-block__stage {
+  display: block;
+}
+
+.contacts-list__item {
+  margin-bottom: 14px;
+}
+
+.contacts-list__heading {
+  font-size: 18px;
+  font-weight: 500;
+  color: #767676;
+  margin-bottom: 10px;
+}
+
+.contacts-list__link {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.contacts-list__phone {
+  font-size: 24px;
+  font-weight: 500;
+}
+
+.contacts-list__mail {
+  font-size: 24px;
+  font-weight: 500;
+}
+
+.about-block__description {
+  font-weight: 400;
+  line-height: 23px;
+  padding-bottom: 10px;
+}
+
+.tech-block__tech-list {
+  padding-top: 10px;
+}
+
+.tech-block__tech-item {
+  display: inline-block;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  width: 40px;
+  height: 40px;
+}
+
+.tech-block__add-button {
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+}
+
+.experience-block__list {
+  padding-bottom: 10px;
+}
+
+.experience-block__about {
+  margin-bottom: 10px;
+}
+
+.experience-block__profession {
+  display: block;
+}
+
+.experience-block__stage {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.experience-block__company {
+  display: block;
+}
+
+.experience-block__location {
+  display: block;
+}
+
+.education-block__list {
+  padding-bottom: 10px;
+}
+
+.education-block__gradation {
+  display: block;
+}
+
+.education-block__institution {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.education-block__location {
+  display: block;
+}
+
+.education-block__years {
+  display: block;
+}
+
+.additional-education-block {
+  -webkit-border-radius: 10px 10px 0 0;
+          border-radius: 10px 10px 0 0;
+  margin-bottom: 0;
+}
+
+.additional-education-block__item {
+  margin-bottom: 20px;
+}
+
+.additional-education-block__heading {
+  display: block;
+  font-weight: 500;
+}
+
+.additional-education-block__link {
+  display: block;
+  font-weight: 400;
+  margin-bottom: 5px;
+}
+
+.additional-education-block__description {
+  display: block;
+  font-weight: 400;
 }

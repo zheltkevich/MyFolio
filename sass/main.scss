@@ -4,8 +4,12 @@
 
 .card {
   width: 100%;
+  min-height: 130px;
   margin: 0 auto;
-  padding: 16px 12px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  padding-left: 12px;
+  padding-right: 12px;
   border-radius: 10px;
   background-color: #ffffff;
   margin-bottom: 10px;
@@ -38,18 +42,19 @@
 
   &__options-button {
     position: relative;
-    width: 28px;
-    height: 28px;
+    width: 30px;
+    height: 30px;
 
     &::before {
       content: "";
       position: absolute;
       top: 0;
-      right: 0;
+      right: 1px;
       width: 6px;
       height: 28px;
       background-image: url(../img/options-button.svg);
       background-repeat: no-repeat;
+      background-size: contain;
 
     }
   }
@@ -110,6 +115,7 @@
       left: 0;
       top: 0;
       background-color: #ffffff;
+      border-radius: 30px;
     }
 
     &::after {
@@ -120,6 +126,7 @@
       left: 0;
       bottom: 0;
       background-color: #ffffff;
+      border-radius: 30px;
     }
   }
 
@@ -131,6 +138,7 @@
     left: 0;
     top: 12px;
     background-color: #ffffff;
+    border-radius: 30px;
   }
 
   &__options-button {
@@ -144,8 +152,10 @@
       width: 6px;
       height: 28px;
       top: 0;
-      right: 0;
+      right: 1px;
       background-image: url(../img/options-button--white.svg);
+      background-size: contain;
+      background-repeat: no-repeat;
     }
   }
 }
@@ -233,8 +243,9 @@
 
 .name-block {
   margin-top: 54px;
-  min-height: 132px;
   border-radius: 0 0 10px 10px;
+  padding-top: 20px;
+  padding-bottom: 20px;
 
   &__wrapper {
     display: flex;
@@ -278,9 +289,11 @@
   min-height: 132px;
 
   &__profession {
+    display: block;
   }
 
   &__stage {
+    display: block;
   }
 }
 
@@ -295,21 +308,32 @@
 .contacts-list {
 
   &__item {
+    margin-bottom: 14px;
   }
 
   &__heading {
+    font-size: 18px;
+    font-weight: 500;
+    color: #767676;
+    margin-bottom: 10px;
   }
 
   &__link {
+    display: inline-block;
+    margin-right: 10px;
   }
 
   &__icon {
   }
 
   &__phone {
+    font-size: 24px;
+    font-weight: 500;
   }
 
   &__mail {
+    font-size: 24px;
+    font-weight: 500;
   }
 }
 
@@ -317,6 +341,9 @@
 .about-block {
 
   &__description {
+    font-weight: 400;
+    line-height: 23px;
+    padding-bottom: 10px;
   }
 }
 
@@ -324,15 +351,24 @@
 .tech-block {
 
   &__tech-list {
+    padding-top: 10px;
   }
 
   &__tech-item {
+    display: inline-block;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    width: 40px;
+    height: 40px;
   }
 
   &__tech-icon {
   }
 
   &__add-button {
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
   }
 
   &__add-button-icon {
@@ -342,22 +378,37 @@
 
 .experience-block {
 
+  &__list {
+    padding-bottom: 10px;
+  }
+
+  &__item {
+
+  }
+
   &__about {
+    margin-bottom: 10px;
   }
 
   &__profession {
+    display: block;
   }
 
   &__stage {
+    display: block;
+    margin-bottom: 5px;
   }
 
   &__company {
+    display: block;
   }
 
   &__location {
+    display: block;
   }
 
   &__description {
+
   }
 }
 
@@ -365,39 +416,56 @@
 .education-block {
 
   &__list {
+    padding-bottom: 10px;
   }
 
   &__item {
   }
 
   &__gradation {
+    display: block;
+
   }
 
   &__institution {
+    display: block;
+    margin-bottom: 5px;
   }
 
   &__location {
+    display: block;
   }
 
   &__years {
+    display: block;
   }
 }
 
 
 .additional-education-block {
+  border-radius: 10px 10px 0 0;
+  margin-bottom: 0;
 
   &__list {
   }
 
   &__item {
+    margin-bottom: 20px;
   }
 
   &__heading {
+    display: block;
+    font-weight: 500;
   }
 
   &__link {
+    display: block;
+    font-weight: 400;
+    margin-bottom: 5px;
   }
 
   &__description {
+    display: block;
+    font-weight: 400;
   }
 }
