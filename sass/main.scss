@@ -3,7 +3,6 @@
 
 
 .card {
-  min-width: 320px;
   width: 100%;
   margin: 0 auto;
   padding: 16px 12px;
@@ -16,7 +15,7 @@
 .section-title {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-end;
   position: relative;
   margin-bottom: 20px;
   width: 100%;
