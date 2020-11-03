@@ -3,7 +3,18 @@
 
 <head>
   <meta charset="UTF-8">
+  <link rel='manifest' href='/manifest.json'>
+  <script type="module" src="/pwabuilder-sw.js"></script>
+
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <script type="module">
+    import 'https://cdn.jsdelivr.net/npm/@pwabuilder/pwaupdate';
+
+    const el = document.createElement('pwa-update');
+    document.body.appendChild(el);
+  </script>
+
   <title>PWA</title>
   <meta name="description" content="Моя анкета">
   <link rel="preload" href="css/main.css" as="style">
@@ -61,12 +72,12 @@
     </section>
 
     <section class="profession-block card">
-        <div class="section-title">
-          <h2 class="section-title__heading">Профессия</h2>
-          <button class="section-title__options-button" type="button" aria-label="Опции"></button>
-        </div>
-        <b class="profession-block__profession">FrontEnd-разработчик</b>
-        <span class="profession-block__stage">2 года 3 месяца</span>
+      <div class="section-title">
+        <h2 class="section-title__heading">Профессия</h2>
+        <button class="section-title__options-button" type="button" aria-label="Опции"></button>
+      </div>
+      <b class="profession-block__profession">FrontEnd-разработчик</b>
+      <span class="profession-block__stage">2 года 3 месяца</span>
     </section>
 
     <section class="links-block card">
