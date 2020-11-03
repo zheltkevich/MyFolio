@@ -5,7 +5,7 @@
   src: url("../fonts/PT-Root-UI_Light.woff2") format("woff2");
   src: local("☺"), url("../fonts/PT-Root-UI_Light.woff2") format("woff2");
   font-weight: 300;
-  font-style: normal; 
+  font-style: normal;
 }
 
 @font-face {
@@ -13,7 +13,7 @@
   src: url("../fonts/PT-Root-UI_Regular.woff2") format("woff2");
   src: local("☺"), url("../fonts/PT-Root-UI_Regular.woff2") format("woff2");
   font-weight: 400;
-  font-style: normal; 
+  font-style: normal;
 }
 
 @font-face {
@@ -21,8 +21,50 @@
   src: url("../fonts/PT-Root-UI_Medium.woff2") format("woff2");
   src: local("☺"), url("../fonts/PT-Root-UI_Medium.woff2") format("woff2");
   font-weight: 500;
-  font-style: normal; 
+  font-style: normal;
 }
+
+
+::-webkit-scrollbar { // Основная ширина полосы прокрутки.
+  width: 12px;
+}
+
+::-webkit-scrollbar-track { // Цвет дорожки, по которой двигается бегунок прокрутки.
+  background-color: $main-color;
+  // box-shadow: 1px 1px 3px #775a11 inset;
+}
+
+::-webkit-scrollbar-button {
+  background-color: #b48716;
+  background-image: url('');
+  background-repeat: no-repeat;
+  width: 10px;
+  height: 54px;
+
+  &:hover {
+    background-color: #d39f1a;
+  }
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #b48716;
+  width: 6px;
+  box-shadow: 0px 0px 1px #775a11 inset;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #d39f1a;
+}
+
+::-webkit-resizer {
+  background-image: url('');
+  background-repeat: no-repeat;
+  width: 10px;
+  height: 10px
+}
+
+
+
 
 * {
   box-sizing: border-box;
@@ -45,7 +87,12 @@ body {
   background-color: #D3D3D3;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font: inherit;
 }
 
@@ -69,7 +116,7 @@ button {
 .hidden,
 .hidden:not(:focus):not(:active) {
   position: absolute;
-  
+
   width: 1px;
   height: 1px;
   margin: -1px;
