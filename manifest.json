@@ -19,6 +19,11 @@
           "type": "image/png"
       },
       {
+        "src": "img/logos/512x512.png",
+        "sizes": "512x512",
+        "type": "image/png"
+      },
+      {
           "src": "img/logos/48x48.png",
           "sizes": "48x48",
           "type": "image/png"
