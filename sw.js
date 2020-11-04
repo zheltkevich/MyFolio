@@ -1,4 +1,4 @@
-const staticCacheName = 'static-cache-v0.04';
+const staticCacheName = 'static-cache-v0.05';
 const dynamicCacheName = 'dynamic-cache-v0';
 
 const staticAssets = [

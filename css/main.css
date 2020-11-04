@@ -555,9 +555,8 @@ button {
 }
 
 .additional-education-block {
-  -webkit-border-radius: 10px 10px 0 0;
-          border-radius: 10px 10px 0 0;
-  margin-bottom: 0;
+  -webkit-border-radius: 10px;
+          border-radius: 10px;
 }
 
 .additional-education-block__item {
