@@ -2,7 +2,6 @@ const staticCacheName = 'static-cache-v0.05';
 const dynamicCacheName = 'dynamic-cache-v0';
 
 const staticAssets = [
-  './',
   './index.html',
   './img/icons/MyFolio__128x128.png',
   './img/icons/MyFolio__192x192.png',
