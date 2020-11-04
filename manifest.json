@@ -38,12 +38,6 @@
             "type": "image/png"
         },
         {
-            "src": "img/icons/maskable_icon.png",
-            "sizes": "196x196",
-            "type": "image/png",
-            "purpose": "any maskable"
-        },
-        {
             "src": "img/icons/MyFolio__384x384.png",
             "sizes": "384x384",
             "type": "image/png"
@@ -51,7 +45,8 @@
         {
             "src": "img/icons/MyFolio__512x512.png",
             "sizes": "512x512",
-            "type": "image/png"
+            "type": "image/png",
+            "purpose": "any maskable"
         }
     ],
     "splash_pages": null
