@@ -35,7 +35,7 @@
 }
 
 ::-webkit-scrollbar-button {
-  background-color: #b48716;
+  background-color: $main-color;
   background-image: url('');
   background-repeat: no-repeat;
   width: 10px;
@@ -50,10 +50,10 @@
   background-color: #b48716;
   width: 6px;
   box-shadow: 0px 0px 1px #775a11 inset;
-}
 
-::-webkit-scrollbar-thumb:hover {
-  background-color: #d39f1a;
+  &:hover {
+    background-color: #d39f1a;
+  }
 }
 
 ::-webkit-resizer {
