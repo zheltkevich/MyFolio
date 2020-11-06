@@ -135,3 +135,7 @@ button {
   margin: 0 auto;
   padding: 0 12px;
 }
+
+body.lock {
+    overflow: hidden;
+}
