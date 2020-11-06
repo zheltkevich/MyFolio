@@ -175,6 +175,7 @@
 .side-navbar {
 
   &__list {
+    overflow-y: auto;
     padding: 20px 0;
   }
 
