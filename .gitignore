@@ -30,5 +30,7 @@ $RECYCLE.BIN/
 
 # Others
 workspace.xml
+*.name
+*.xml
 
 # End of https://www.toptal.com/developers/gitignore/api/windows
